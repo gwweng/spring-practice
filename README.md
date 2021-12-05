@@ -9,4 +9,4 @@ demo3 - 实现解析配置文件的功能（使用PropertySourceLoader接口）
 > SpringBoot没有提供解析json配置文件的功能，实现自定义解析Json配置
 
 demo4 - 实现ApplicationContextAware接口方便获取容器ApplicationContext
-
+demo5 - 使用FactoryBean自定义注册对象
