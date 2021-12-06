@@ -10,3 +10,4 @@ demo3 - 实现解析配置文件的功能（使用PropertySourceLoader接口）
 
 demo4 - 实现ApplicationContextAware接口方便获取容器ApplicationContext
 demo5 - 使用FactoryBean自定义注册对象
+demo6 - 使用BeanPostProcessor实现动态ID生成器
