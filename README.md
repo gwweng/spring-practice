@@ -11,3 +11,21 @@ Spring框架训练 - 致力于精通Spring系列
 - demo4 - 实现ApplicationContextAware接口方便获取容器ApplicationContext
 - demo5 - 使用FactoryBean自定义注册对象
 - demo6 - 使用BeanPostProcessor实现动态ID生成器
+- demo7 - 使用BeanDefinitionRegistryPostProcessor注入Bean
+
+
+
+
+### 理论知识
+#### 注入Bean的五种方式
+
+- @Configuration + @Bean
+- @Component + @ComponentScan
+- @Import注解导入
+  - @Import 直接导入类
+  - @Import + ImportSelector
+  - @Import + ImportBeanDefinitionRegistrar
+  - @Import + DeferredImportSelector(区别第2种好处是延迟导入)
+- 使用FactoryBean接口
+- 使用BeanDefinitionRegistryPostProcessor
+> Spring 容器启动时会执行BeanDefinitionRegistryPostProcessor#postProcessBeanDefinitionRegistry方法，等Bd对象加载完毕之后，对bd对象进行后置处理
